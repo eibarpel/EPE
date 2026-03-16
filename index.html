@@ -6,7 +6,37 @@
 
 <body>
 <h1>Kaixo pelotarixa!</h1>
+<form id="form">
 
+<input name="nombre" placeholder="Nombre" required>
+<input name="email" placeholder="Email" required>
+<textarea name="mensaje" placeholder="Mensaje"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+<script>
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbyrD4lxXLWX-KMz63ULUGwp-pzLd8-vCMwjpio6pqqcr8kV5iV3OGlrqEYx9dsRpq2LGw/exec"
+
+const form = document.getElementById("form")
+
+form.addEventListener("submit", e => {
+
+e.preventDefault()
+
+fetch(scriptURL, {
+method: "POST",
+body: JSON.stringify(Object.fromEntries(new FormData(form)))
+})
+
+.then(() => alert("Datos enviados"))
+.catch(error => alert("Error"))
+
+})
+
+</script>
 </body>
 
 </html>
