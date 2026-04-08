@@ -5,39 +5,15 @@
 </head>
 
 <body>
-<h1>Kaixo pelotarixak28!</h1>
-  <div style="width: 100%; height: 20px; border: 0px"></div>
-  
- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrDieWd6hjrpeSjCLoVXSCQLHGiLBF2L99HSvf27g5ZpARP7h3uv4KpAhCTbKERg/pubhtml?gid=1301835729&single=true"></iframe>
-   
-  <div style="width: 100%; height: 20px; border: 0px"></div>
-<form id="availabilityForm">
+<h1>Kaixo pelotarixak29!</h1>
 
 
-
-</form>
-
-<script>
-
-const scriptURL = "https://script.google.com/macros/s/AKfycbyrD4lxXLWX-KMz63ULUGwp-pzLd8-vCMwjpio6pqqcr8kV5iV3OGlrqEYx9dsRpq2LGw/exec"
-
-const form = document.getElementById("availabilityForm")
-
-form.addEventListener("submit", e => {
-
-e.preventDefault()
-
-fetch(scriptURL, {
-method: "POST",
-body: JSON.stringify(Object.fromEntries(new FormData(form)))
-})
-
-.then(() => alert("Datos enviados"))
-.catch(error => alert("Error"))
-
-})
-
-</script>
-</body>
+  <div style="width:100%; height:90vh; overflow:auto;">
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrDieWd6hjrpeSjCLoVXSCQLHGiLBF2L99HSvf27g5ZpARP7h3uv4KpAhCTbKERg/pubhtml?gid=1301835729&single=true"
+    style="width:100%; height:100%; border:none;">
+  </iframe>
+</div>
+  </body>
 
 </html>
