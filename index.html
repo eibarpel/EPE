@@ -2,28 +2,40 @@
 <html>
 <head>
   <title>EKD - Pelotia</title>
+
+  <style>
+    .container {
+      display: flex;
+      gap: 0px; /* espacio entre iframes */
+    }
+
+    .iframe-small {
+      width: 140px;
+      height: 540px;
+      border: none;
+    }
+
+    .iframe-big {
+      flex: 1; /* ocupa el resto del espacio */
+      height: 540px;
+      border: none;
+    }
+  </style>
 </head>
+
 <body>
-  <h1> -- Kartelera3 -- </h1>
-  <div style="width: 100%; height: 20px; border: 0px"></div>
-  <div style="width: 100%; height: 100%; border: 0px">
-    <table style="width: 100%; border: 1px">
-      <tr>
-        <td width="20px"></td>
-        <td align="left">
-          <iframe 
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=1506814058&single=true"  
-            style="width:140px; height:540px; border:none;">
-          </iframe>
-        </td>
-        <td>
-          <iframe 
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=91329535&single=true&widget=true&headers=false"  
-            style="width:100%; height:540px; border:none;">
-          </iframe>
-        </td>
-      </tr>
-    </table>
- </div>
+  <h1>-- Kartelera5 --</h1>
+
+  <div class="container">
+    <iframe 
+      class="iframe-small"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=1506814058&single=true">
+    </iframe>
+
+    <iframe 
+      class="iframe-big"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=91329535&single=true">
+    </iframe>
+  </div>
 </body>
 </html>
