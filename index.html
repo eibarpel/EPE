@@ -26,20 +26,16 @@
 <body>
   <h1> - - - - Kartelera - - - -</h1>
 
-<script src="https://www.gstatic.com/charts/loader.js"></script>
-<div id="table"></div>
-<script>
-google.charts.load('current', {packages:['table']});
-google.charts.setOnLoadCallback(() => {
-  const query = new google.visualization.Query(
-    'https://docs.google.com/spreadsheets/d/1HyvLkTxXXVVeZoGiUb3PDHtDbZXf2CgTl3ou9klrThE/gviz/tq?gid=1506814058'
-  );
+  <div class="container">
+    <iframe 
+      class="iframe-small"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=1506814058&single=true">
+    </iframe>
 
-  query.send(res => {
-    const table = new google.visualization.Table(document.getElementById('table'));
-    table.draw(res.getDataTable());
-  });
-});
-</script>
+    <iframe 
+      class="iframe-big"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=91329535&single=true">
+    </iframe>
+  </div>
 </body>
 </html>
