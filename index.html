@@ -8,7 +8,7 @@
     .container1 {
       display: flex;
       gap: 0px; /* espacio entre iframes */
-      position:relative; left: 10px; top:-30px;
+      position:relative; left: 0px; top:-30px;
       border: 2px solid blue;
     }
     
@@ -27,10 +27,8 @@
     
   .container2 {
     display: flex;
-    gap: 20px;
-    position: relative;
-    top: -40px;   /* 👈 this creates the overlap */
-    left: 10px;
+    gap: 0px;
+    position:relative; left: 10px; top:800px;
     z-index: 10;
   }
   
@@ -44,8 +42,8 @@
   }
 
   .container22 {
+    flex: 1; /* ocupa el resto del espacio */
     height:100px;
-    position:relative; left: 190px; top:0px;
     background:white;
     z-index: 10;
     border: 1px solid green;
@@ -60,12 +58,10 @@
       class="container11"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=1506814058&single=true">
     </iframe>
-
     <iframe 
       class="container12"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=91329535&single=true">
     </iframe>
-    
   </div>
   
   <div class="container2">
