@@ -12,54 +12,66 @@
       border: 2px solid blue;
     }
     
-    .iframe-small {
+    .container11 {
       width: 170px;
       height: 500px;
       border: none;
     }
 
-    .iframe-big {
+    .container12 {
       flex: 1; /* ocupa el resto del espacio */
       height: 500px;
       border: none;
     }
-  
-    .container21 {
-      width: 170px;
-      height:100px;
-      position:relative; left: 10px; top:0px;
-      background:white;
-      z-index: 10;
-      border: 1px solid red;
-    }
 
-    .container22 {
-      height:100px;
-      position:relative; left: 190px; top:0px;
-      background:white;
-      z-index: 10;
-      border: 1px solid green;
-    }
     
-   
+  .container2 {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: -40px;   /* 👈 this creates the overlap */
+    left: 10px;
+    z-index: 10;
+  }
+  
+  .container21 {
+    width: 170px;
+    height:100px;
+    position:relative; left: 10px; top:0px;
+    background:white;
+    z-index: 10;
+    border: 1px solid red;
+  }
+
+  .container22 {
+    height:100px;
+    position:relative; left: 190px; top:0px;
+    background:white;
+    z-index: 10;
+    border: 1px solid green;
+  }
   </style>
+  
 </head>
 
 <body>
   <div class="container1">
     <iframe 
-      class="iframe-small"
+      class="container11"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=1506814058&single=true">
     </iframe>
 
     <iframe 
-      class="iframe-big"
+      class="container12"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=91329535&single=true">
     </iframe>
+    
   </div>
   
-  
-  <!--div class="container21">aaa</div-->
-  <div class="container22">ccc</div>
+  <div class="container2">
+    <div class="container21">aaa</div>
+    <div class="container22">ccc</div>
+  </div>
+ 
 </body>
 </html>
