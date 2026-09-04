@@ -1,79 +1,57 @@
-https://github.com/eibarpel/EPE/blob/main/index.html
-
-2025/26 denboraldiko bertsioa.
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>EKD Kartelera</title>
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .container1 {
-      display: flex;
-      gap: 0px;
-      margin-left: 20px;
-      margin-top: -20px;
-      border: none;
-    }
-    .container11 {
-      width: 200px;
-      height: 560px; /* 20px mas por nueva fila */
-      border: none;
-    }
-    .container12 {
-      flex: 1; /* ocupa el resto del espacio */
-      height: 560px;  /* 20px mas por nueva fila */
-      border: none;
-    }
-    
-    .container2 {
-      display: flex;
-      gap: 0px;
-      margin-left: 20px;
-      z-index: 10;
-      border: none;
-    }
-    .container21 {
-      width: 210px;
-      height:50px;
-      background:white;
-      margin-top: -40px;
-      z-index: 10;
-      border: none;
-    }
-    .container22 {
-      flex: 1; /* ocupa el resto del espacio */
-      height:30px;
-      margin-top: -30px;
-      background:white;
-      z-index: 10;
-      border: none;
-    }
-  
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eibarko Klub Deportiboa. Piloriak.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #3b6657; /* Fondo añadido */
+            color: white;               /* Color de texto claro para contraste */
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: #ffffff; /* Cambiado a blanco para destacar sobre el fondo */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container1">
-    <iframe 
-      class="container11"
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=1506814058&single=true">
-    </iframe>
-    <iframe 
-      class="container12"
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7QVqPzERgdroAzV_Y_rhp0FBZE5U5TBOwhS0eEKBBZZHJU-aTGFWYc3c6hBOEkSgwN6nDdfS478n9/pubhtml?gid=91329535&single=true">
-    </iframe>
-  </div>
   
-  <div class="container2">
-    <div class="container21"></div>
-    <div class="container22"></div>
-  </div>
- 
+    <!-- Imagen con la URL CDN de Google Drive -->
+    <img src="https://lh3.googleusercontent.com/d/1oAaDn-aSwrK-IvFkLdAZVvlfQ5_o-axj" alt="Eibar K.D.">
+    
+    <h1>Eibarko Pilotariak</h1>
+
+    <div class="links-container">
+        <a href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing" target="_blank">
+        Pilotarien Karpeta
+	</a>
+
+        <a href="otra-pagina.html">Ir a otra página HTML</a>
+    </div>
+
 </body>
 </html>
