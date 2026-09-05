@@ -20,31 +20,38 @@
               justify-content: center;
               align-items: flex-start;
               margin: 0 auto;
-              max-width: 98%;
+              max-width: 92%;
           }
 
           /* Contenedores para recortar la barra de título superior de Google Sheets */
           .iframe-wrapper-left {
               width: 260px;
-              height: 350px;
+              height: 280px;
               overflow: hidden;
               position: relative;
           }
 
           .iframe-wrapper-right {
-              flex: 1;
-              height: 350px;
-              overflow: hidden;
-              position: relative;
+            flex: 1;
+            height: 280px;
+            overflow: hidden; /* Mantiene oculta la barra superior recortada */
+            position: relative;
           }
 
-          /* Los iframes se desplazan ligeramente hacia arriba para ocultar el título superior */
-          .iframe-wrapper-left iframe,
+         .iframe-wrapper-left iframe {
+              width: 100%;
+              height: calc(100% + 35px); /* Compensación de la barra superior */
+              margin-top: -20px; /* Sube la tabla para tapar el título "Partiduak_..." */
+              border: none;
+          }
+        
           .iframe-wrapper-right iframe {
               width: 100%;
               height: calc(100% + 35px); /* Compensación de la barra superior */
-              margin-top: -25px; /* Sube la tabla para tapar el título "Partiduak_..." */
+              margin-top: -20px; /* Sube la tabla para tapar el título "Partiduak_..." */
               border: none;
+              overflow-x: auto;
+              overflow-y: hidden;
           }
       </style>
   </head>
