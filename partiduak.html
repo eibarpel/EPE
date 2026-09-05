@@ -17,15 +17,32 @@
       font-size: 1.5em;
     }
     
-    .container0 {
+   .container0 {
       display: flex;
       gap: 0px;
       margin-left: 20px;
       margin-right: 20px;
-      height: 30px;
+      
       z-index: 10;
       border: none;
     }
+    .container01 {
+      width: 212px;
+      height:40px;
+      background:red;
+      margin-top: 0px;
+      z-index: 10;
+      border: none;
+    }
+    .container02 {
+      flex: 1; /* ocupa el resto del espacio */
+      height:40px;
+      margin-top: 0px;
+      background:red;
+      z-index: 10;
+      border: none;
+    }  
+    
     .container1 {
       display: flex;
       gap: 0px;
@@ -59,7 +76,7 @@
     }
     .container21 {
       width: 212px;
-      height:30px;
+      height:36px;
       background:white;
       margin-top: -40px;
       z-index: 10;
@@ -81,7 +98,10 @@
   
   <div style="height:60px;">&nbsp;</div>
    
-  <div class="container0">&nbsp;</div>
+  <div class="container0">
+    <div class="container01"></div>
+    <div class="container02"></div>
+  </div>
 
   
   <div class="container1">
