@@ -17,10 +17,17 @@
                 font-size: 2.5em;
                 margin-bottom: 40px;
             }
+            /* Contenedor principal para centrar en pantalla */
             .links-container {
                 display: flex;
                 justify-content: center;
-                align-items: center;
+            }
+            /* Subcontenedor en columna alineado a la izquierda */
+            .links-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 80px; /* Espacio vertical entre los enlaces */
             }
             .drive-link {
                 text-decoration: none;
@@ -28,41 +35,42 @@
                 font-weight: bold;
                 font-size: 1.2em;
                 display: inline-flex;
-                flex-direction: row; /* Alinea texto e imagen en la misma fila */
-                align-items: center;  /* Centra verticalmente el texto con la imagen */
-                gap: 10px;           /* Espacio entre el texto y la imagen */
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
             }
-            
+            .drive-link:hover {
+                text-decoration: underline;
+            }
             img {
                 max-width: 300px;
                 height: auto;
-                
             }
             .drive-icon {
-                width: 60px; /* Tamaño reducido para el icono de Drive */
+                width: 60px;
                 height: auto;
             }
         </style>
     </head>
     <body>
-    
+
         <img src="https://lh3.googleusercontent.com/d/1HePYm29IGYsGyTwIKBbudY-ZzVcQcZ5E" alt="Eibar K.D.">
         
         <h1>Eibarko Pelotarixak</h1>
-    
-        <div class="links-container">
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing" target="_blank">
-                <span>Pelotarixen Karpeta</span>
-                <img class="drive-icon" src="https://lh3.googleusercontent.com/d/1WYjVmAcawy_R5nSpl_3VLK-RsAn3eu5J" alt="Google Drive">
-            </a>
-        </div>
-        
-        <div height="60px">&nbsp;</div>
 
+        <!-- Enlaces agrupados, centrados en pantalla y alineados a la izquierda entre sí -->
         <div class="links-container">
-            <a class="drive-link" href="partiduak.html" target="_blank">
-                <span>2026/27 Denboraldiko Partiduak</span>
-            </a>
+            <div class="links-wrapper">
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing" target="_blank">
+                    <span>Pelotarixen Karpeta</span>
+                    <img class="drive-icon" src="https://lh3.googleusercontent.com/d/1WYjVmAcawy_R5nSpl_3VLK-RsAn3eu5J" alt="Google Drive">
+                </a>
+
+                <a class="drive-link" href="partiduak.html">
+                    <span>2026/27 Denboraldiko Partiduak</span>
+                </a>
+            </div>
         </div>
+
     </body>
 </html>
