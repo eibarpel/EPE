@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eibar K.D. Pelotarixak.</title>
+    <title>Eibar K.D. Pelotarixak</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
-            background-color: #3b6657; /* Fondo añadido */
-            color: white;               /* Color de texto claro para contraste */
+            background-color: #3b6657;
+            color: white;
         }
         h1 {
             font-weight: bold;
@@ -19,40 +19,45 @@
         }
         .links-container {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            justify-content: center;
             align-items: center;
         }
-        a {
+        .drive-link {
             text-decoration: none;
-            color: #ffffff; /* Cambiado a blanco para destacar sobre el fondo */
+            color: #ffffff;
             font-weight: bold;
             font-size: 1.2em;
+            display: inline-flex;
+            flex-direction: row; /* Alinea texto e imagen en la misma fila */
+            align-items: center;  /* Centra verticalmente el texto con la imagen */
+            gap: 10px;           /* Espacio entre el texto y la imagen */
         }
-        a:hover {
+        .drive-link:hover {
             text-decoration: underline;
         }
         img {
             max-width: 300px;
             height: auto;
+            mix-blend-mode: multiply; /* Disimula el fondo blanco de las imágenes */
         }
-	</style>
+        .drive-icon {
+            width: 30px; /* Tamaño reducido para el icono de Drive */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-	
-    <!-- Imagen con la URL de Google Drive -->
+
     <img src="https://lh3.googleusercontent.com/d/1HePYm29IGYsGyTwIKBbudY-ZzVcQcZ5E" alt="Eibar K.D.">
     
     <h1>Eibarko Pelotarixak</h1>
 
     <div class="links-container">
-        <a href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing" target="_blank">Pelotarixen Karpeta</a>
-		<img src="https://lh3.googleusercontent.com/d/1WYjVmAcawy_R5nSpl_3VLK-RsAn3eu5J" alt="Google Drive">
+        <a class="drive-link" href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing" target="_blank">
+            <span>Pelotarixen Karpeta</span>
+            <img class="drive-icon" src="https://lh3.googleusercontent.com/d/1WYjVmAcawy_R5nSpl_3VLK-RsAn3eu5J" alt="Google Drive">
+        </a>
     </div>
 
-	<div class="links-container">
-        <a href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing" target="_blank">Pelotarixen Karpeta</a>
-	</div>
-	
 </body>
 </html>
