@@ -20,10 +20,9 @@
             .links-wrapper {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 text-align: center;
                 gap: 50px; /* Espacio vertical entre los enlaces */
-                border:1px;
             }
             .linkak {
                 text-decoration: none;
@@ -31,9 +30,11 @@
                 font-weight: bold;
                 font-size: 1.2em;
                 display: inline-flex;
-                flex-direction: row;
                 align-items: center;
+                justify-content: flex-start; /* Alinea texto e icono a la izquierda dentro del enlace */
                 gap: 10px;
+                width: 360px; /* Ancho fijo para alineación vertical perfecta */
+                text-align: left;
             }
             .drive-link:hover {
                 text-decoration: underline;
@@ -47,7 +48,7 @@
                 height: auto;
             }
              .gipfed-icon {
-                width: 12px;
+                width: 30px;
                 height: auto;
             }
         </style>
