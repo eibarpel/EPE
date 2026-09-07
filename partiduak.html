@@ -89,10 +89,18 @@
       z-index: 10;
       border: none;
     }  
+    .footer-container {
+      max-width: 1100px;
+      margin: 30px auto 0 auto;
+      text-align: left; /* Alinea la imagen a la izquierda */
+    }
+
+    /* Imagen con mayor tamaño */
     .adibide-icon {
-      width: 200px;
+      width: 100%;
+      max-width: 450px; /* Aumentado de tamaño */
       height: auto;
-      flex: 1;
+      display: block;
     }
 
   </style>
@@ -126,8 +134,8 @@
   </div>
 
   <div style="height:30px;">&nbsp;</div>
-  <div >
-    <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS">
+  <div class="footer-container">
+    <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS" alt="Leyenda">
   </div>
 </body>
 </html>
