@@ -15,14 +15,20 @@
             h1 {
                 font-weight: bold;
                 font-size: 2.5em;
-                margin-bottom: 60px;
+                margin-bottom: 40px;
+            }
+            /* Contenedor principal para centrar todo el bloque */
+            .main-content {
+                display: inline-block;
+                text-align: left; /* Mantiene la alineación izquierda interna */
             }
             .links-wrapper {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 40px; /* Espacio vertical entre los enlaces */
+                align-items: flex-start;
+                gap: 40px;
+                /* El margen de ~0.85em compensa las letras 'E' y 'b' para coincidir con la 'i' */
+                margin-left: 0.85em; 
             }
             .linkak {
                 text-decoration: none;
@@ -31,23 +37,24 @@
                 font-size: 1.2em;
                 display: inline-flex;
                 align-items: center;
-                justify-content: flex-start; /* Alinea texto e icono a la izquierda dentro del enlace */
                 gap: 10px;
-                width: 500px; /* Ancho fijo para alineación vertical perfecta */
-                text-align: left;
             }
-            .drive-link:hover {
+            .linkak:hover {
                 text-decoration: underline;
             }
             img {
                 max-width: 300px;
                 height: auto;
             }
+            .logo-header {
+                display: block;
+                margin: 0 auto; /* Mantiene el logo centrado independientemente */
+            }
             .drive-icon {
                 width: 60px;
                 height: auto;
             }
-             .gipfed-icon {
+            .gipfed-icon {
                 width: 22px;
                 height: auto;
             }
@@ -55,14 +62,11 @@
     </head>
     <body>
 
-        <img src="https://lh3.googleusercontent.com/d/1HePYm29IGYsGyTwIKBbudY-ZzVcQcZ5E" alt="Eibar K.D.">
+        <img class="logo-header" src="https://lh3.googleusercontent.com/d/1HePYm29IGYsGyTwIKBbudY-ZzVcQcZ5E" alt="Eibar K.D.">
         
-        <h1>Eibarko Pelotarixakx</h1>
-        
-        <div style="height:20px;">&nbsp;</div>
-        
-        <!-- Enlaces agrupados, centrados en pantalla y alineados a la izquierda entre sí -->
-       
+        <div class="main-content">
+            <h1>Eibarko Pelotarixak</h1>
+            
             <div class="links-wrapper">
                 <a class="linkak" href="https://drive.google.com/drive/folders/1rCqMKCbwIehQRI_vZDt6dynCNloPXoCm?usp=sharing">
                     <span>Pelotarixen Karpeta</span>
@@ -74,11 +78,11 @@
                 </a>
 
                 <a class="linkak" href="https://gipuzkoapilota.eus/lehiaketa-denboraldia">
-                    <img class="gipfed-icon" src="https://lh3.googleusercontent.com/d/1v_FWGi6lI5k34ud1vLYftSFSj6Tpm_99">
+                    <img class="gipfed-icon" src="https://lh3.googleusercontent.com/d/1v_FWGi6lI5k34ud1vLYftSFSj6Tpm_99" alt="Gipuzkoako Euskal Pilota Federazioa">
                     <span>Gipuzkoako Euskal Pilota Federazioa</span>
                 </a>
             </div>
-       
+        </div>
 
     </body>
 </html>
