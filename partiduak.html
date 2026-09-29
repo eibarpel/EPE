@@ -128,11 +128,13 @@
 
       if (container) {
         const maxScroll = container.scrollWidth;
-        alert(maxScroll);
-        container.scrollTo({
-  left: 400,
-  behavior: 'auto' // Usa 'auto' para un salto instantáneo
-});
+        alert("1");
+        requestAnimationFrame(() => {
+          container.scrollTo({
+            left: 400,
+            behavior: 'auto'
+          });
+        });
         alert(maxScroll / 2);
       }
     }
