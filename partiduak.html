@@ -55,21 +55,11 @@
      }
     
     .container12 {
-      
-      width: 2500px;
+      flex: 1; /* ocupa el resto del espacio */
       border: none;
       height: 390px;
       margin-top: -30px;
       background:#3b6657;
-      overflow-y: hidden;
-    }
-    
-    .wrapper-scroll {
-      flex: 1;
-      height: 410px;
-      margin-top: -30px;
-      background: #3b6657;
-      overflow-x: auto; /* Permite scroll horizontal */
       overflow-y: hidden;
     }
     
@@ -103,7 +93,7 @@
   </style>
 </head>
 
-<body onload="posicionarScroll()">
+<body>
   <h1>Eibar K.D. - 2026/27 Denboraldiko Partiduak</h1> 
   
   <div style="height:10px;">&nbsp;</div>
@@ -114,15 +104,13 @@
       class="container11"
       scrolling="no"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSxtxnQvmD3WD2aproMc5mndxcRtn-jZAt3G4LVFiVfd7w_gv0Ik9mMofnE48eztNmDcw3jH6GnOsau/pubhtml?gid=1506814058&widget=true">
+    
     </iframe>
-      
-    <div class="wrapper-scroll" id="scrollWrapper">
-      <iframe 
-        class="container12"
-        scrolling="no"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSxtxnQvmD3WD2aproMc5mndxcRtn-jZAt3G4LVFiVfd7w_gv0Ik9mMofnE48eztNmDcw3jH6GnOsau/pubhtml?gid=91329535&widget=true">
-      </iframe>
-    </div>
+    <iframe 
+      class="container12"
+      scrolling="no"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSxtxnQvmD3WD2aproMc5mndxcRtn-jZAt3G4LVFiVfd7w_gv0Ik9mMofnE48eztNmDcw3jH6GnOsau/pubhtml?gid=91329535&widget=true">
+    </iframe>
   </div>
   
   <div class="container2"> </div>
@@ -131,24 +119,5 @@
   <div class="footer-container">
     <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS" alt="Leyenda">
    </div-->
-<script>
-    function posicionarScroll() {
-      // Alert de prueba para verificar que el evento se dispara
-      alert("¡El evento onload del body se ha disparado!");
-      const wrapper = document.querySelector('.wrapper-scroll');
-
-      if (wrapper) {
-        alert("wrapper-scroll");
-        const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
-        alert(maxScroll);
-        // Ahora maxScroll dará un valor mayor a 0
-        wrapper.scrollLeft = maxScroll * 0.65;
-      }
-      
-      
-    }
-  </script>
-
-  
 </body>
 </html>
