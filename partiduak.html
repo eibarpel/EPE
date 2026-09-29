@@ -120,12 +120,17 @@
     <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS" alt="Leyenda">
    </div-->
 <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Seleccionamos el contenedor que tiene el scroll horizontal
     const container = document.querySelector('.container12');
+
     if (container) {
+      // Calculamos el desplazamiento máximo posible y aplicamos el 65%
       const maxScroll = container.scrollWidth - container.clientWidth;
       container.scrollLeft = maxScroll * 0.65;
     }
-  </script>
+  });
+</script>
 
   
 </body>
