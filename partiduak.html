@@ -93,7 +93,7 @@
   </style>
 </head>
 
-<body onload="posicionarScroll()">
+<body>
   <h1>Eibar K.D. - 2026/27 Denboraldiko Partiduak</h1> 
   
   <div style="height:10px;">&nbsp;</div>
@@ -119,27 +119,5 @@
   <div class="footer-container">
     <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS" alt="Leyenda">
    </div-->
-<script>
-    function posicionarScroll() {
-      // Alert de prueba para verificar que el evento se dispara
-      alert("¡El evento onload del body se ha disparado!");
-
-      const container = document.querySelector('.container12');
-
-      if (container) {
-        const maxScroll = container.scrollWidth;
-        alert("1");
-        requestAnimationFrame(() => {
-          container.scrollTo({
-            left: 400,
-            behavior: 'auto'
-          });
-        });
-        alert(maxScroll / 2);
-      }
-    }
-  </script>
-
-  
 </body>
 </html>
