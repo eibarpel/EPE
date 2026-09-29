@@ -127,7 +127,9 @@
       const container = document.querySelector('.container12');
 
       if (container) {
+        alert("¡El evento 222!");
         const maxScroll = container.scrollWidth - container.clientWidth;
+        alert(maxScroll);
         container.scrollLeft = maxScroll * 0.65;
       }
     }
