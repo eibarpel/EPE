@@ -134,10 +134,10 @@
     function posicionarScroll() {
       // Alert de prueba para verificar que el evento se dispara
       alert("¡El evento onload del body se ha disparado!");
-      const wrapper = document.getElementById('scrollWrapper');
+      const wrapper = document.querySelector('.wrapper-scroll');
 
       if (wrapper) {
-        alert("wrapper");
+        alert("wrapper-scroll");
         const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
         alert(maxScroll);
         // Ahora maxScroll dará un valor mayor a 0
