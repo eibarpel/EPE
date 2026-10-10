@@ -67,38 +67,36 @@
     
     .container2 {
       width: 200px;
-      height:40px;
+      height: 20px; /* Ajusta la altura del espacio inferior */
       margin-top: -20px;
-      gap: 0px;
-      margin-left: 60px;
-      margin-right: 60px;
-      background:white;
+      margin-left: 60px; /* Alineado al margen izquierdo de la tabla */
+      background: #3b6657; /* Cambiado a verde para que coincida con el fondo */
       z-index: 10;
-      border: 1px solid blue;
-   }    
+      border: none; /* Quitamos el borde azul */
+   }   
+
     .container3 {
       display: flex;
       height:30px;
       gap: 0px;
       margin-left: 60px;
       margin-right: 60px;
-      margin-top: -30px; 
+      margin-top: 0px; /* Ajustado para que fluya bien con el container2 */
       background:#3b6657;
       z-index: 10;
       border: none;
       position:relative;
-    }    
+    }   
     
     .footer-container {
       max-width: 1100px;
       margin-left: 80px;
-      text-align: left; /* Alinea la imagen a la izquierda */
+      text-align: left;
     }
 
-    /* Imagen con mayor tamaño */
     .adibide-icon {
       width: 100%;
-      max-width: 350px; /* Aumentado de tamaño */
+      max-width: 350px;
       height: auto;
       display: block;
     }
@@ -125,16 +123,11 @@
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAE6H3d3LbUIXEfZ8_cdnKQ6AU6jE8nDmtdPJwgrVNAYXnjWTSOwUxO40BNlg9nbm_7VdSrkBRqj1i/pubhtml?gid=91329535&widget=true">
     </iframe>
   </div>
-  <!--div class="container2"> </div-->
+
+  <!-- Activamos y configuramos el container2 en verde para tapar el hueco inferior izquierdo -->
+  <div class="container2"></div>
   
   <div class="container3"> </div>
 
-  <!--h2>Adibidez</h2> 
-  <div class="footer-container">
-    <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS" alt="Leyenda">
-
-   src="https://docs.google.com/spreadsheets/d/1SxtxnQvmD3WD2aproMc5mndxcRtn-jZAt3G4LVFiVfd7w/htmlview?gid=91329535"  OTRA FORMA
-  
-   </div-->
 </body>
 </html>
