@@ -26,14 +26,14 @@
     
     .container0 {
       display: flex;
-      height: 25px;
+      height:25px;
       margin-top: 0px;
       gap: 0px;
       margin-left: 60px;
       margin-right: 60px;
-      background: #3b6657;
+      background:#3b6657;
       z-index: 10;
-      border: 2px solid red;
+      border: 0px solid red;
    }
     
     .container1 {
@@ -41,52 +41,66 @@
       gap: 0px;
       margin-left: 60px;
       margin-right: 60px;
-      border: 0px solid black;
+      border: 0px solid red;
+      overflow-y: hidden;
     }
     
     .container11 {
       width: 200px;
-      height: 390px;
+      border: none;
+      height: 412px;
       margin-top: -30px;
-      background: #3b6657;
+      background:#3b6657;
       overflow-y: hidden;
       border: 0px solid white;
      }
     
     .container12 {
       flex: 1; /* ocupa el resto del espacio */
+      border: none;
       height: 412px;
       margin-top: -30px;
-      background: #3b6657;
+      background:#3b6657;
       overflow-y: hidden;
-      border: 0px solid red;
-    }
-
-    /* Contenedor general para la barra inferior de bloques auxiliares */
-    .container2 {
-      display: flex;
-      z-index: 9999;
-      position: relative;
+      border: 0px solid blue;
     }
     
-    /* Bloque Y: Tapa las letras A y B de la izquierda */
-    .container21 {
-      width: 200px;         /* Ancho exacto del primer iframe */
-      bottom: 10px;
-      height: 30px;         /* Altura justa para cubrir A y B */
-      background: #3b6657;  /* Color de fondo para disimular */
-      border: 1px solid blue; /* Línea azul de referencia (puedes cambiar a 0px cuando esté listo) */
-      box-sizing: border-box;
-    }   
+    .container2 {
+      width: 200px;
+      height:40px;
+      margin-top: -20px;
+      gap: 0px;
+      margin-left: 60px;
+      margin-right: 60px;
+      background:white;
+      z-index: 10;
+      border: 1px solid blue;
+   }    
+    .container3 {
+      display: flex;
+      height:30px;
+      gap: 0px;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-top: -30px; 
+      background:#3b6657;
+      z-index: 10;
+      border: none;
+      position:relative;
+    }    
+    
+    .footer-container {
+      max-width: 1100px;
+      margin-left: 80px;
+      text-align: left; /* Alinea la imagen a la izquierda */
+    }
 
-    /* Bloque Z: Espacio auxiliar de la derecha (debajo del scroll) */
-    .container22 {
-      flex: 1;              /* Ocupa el ancho restante debajo del segundo iframe */
-      bottom: 10px;
-      height: 30px;
-      background: #3b6657;  /* Color de fondo */
-      border: 1px solid yellow; /* Línea amarilla de referencia */
-      box-sizing: border-box;
+    /* Imagen con mayor tamaño */
+    .adibide-icon {
+      width: 100%;
+      max-width: 350px; /* Aumentado de tamaño */
+      height: auto;
+      display: block;
     }
 
   </style>
@@ -98,26 +112,29 @@
   <div style="height:10px;">&nbsp;</div>
    
   <div class="container0"> </div>
-  
   <div class="container1">
     <iframe 
       class="container11"
       scrolling="no"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAE6H3d3LbUIXEfZ8_cdnKQ6AU6jE8nDmtdPJwgrVNAYXnjWTSOwUxO40BNlg9nbm_7VdSrkBRqj1i/pubhtml?gid=1506814058&widget=true">
-    </iframe>
     
+    </iframe>
     <iframe 
       class="container12"
       scrolling="no"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAE6H3d3LbUIXEfZ8_cdnKQ6AU6jE8nDmtdPJwgrVNAYXnjWTSOwUxO40BNlg9nbm_7VdSrkBRqj1i/pubhtml?gid=91329535&widget=true">
     </iframe>
   </div>
+  <!--div class="container2"> </div-->
+  
+  <div class="container3"> </div>
 
-  <!-- Fila inferior que agrupa los dos bloques Y y Z debajo de sus respectivos iframes -->
-  <div class="container2">
-    <div class="container21"></div>
-    <div class="container22"></div>
-  </div>
+  <!--h2>Adibidez</h2> 
+  <div class="footer-container">
+    <img class="adibide-icon" src="https://lh3.googleusercontent.com/d/1mEPQYQwpEM-TbgupSWMN9q-fv-rtxNZS" alt="Leyenda">
 
+   src="https://docs.google.com/spreadsheets/d/1SxtxnQvmD3WD2aproMc5mndxcRtn-jZAt3G4LVFiVfd7w/htmlview?gid=91329535"  OTRA FORMA
+  
+   </div-->
 </body>
 </html>
