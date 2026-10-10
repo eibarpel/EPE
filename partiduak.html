@@ -33,7 +33,7 @@
       margin-right: 60px;
       background: #3b6657;
       z-index: 10;
-      border: 0px solid red;
+      border: 2px solid red;
    }
     
     .container1 {
@@ -63,11 +63,8 @@
     }
 
     /* Contenedor general para la barra inferior de bloques auxiliares */
-    .container-footer-blocks {
+    .container2 {
       display: flex;
-      margin-left: 60px;
-      margin-right: 60px;
-      margin-top: -24px; /* Sube ambos bloques para solaparse con la zona inferior de los iframes */
       z-index: 9999;
       position: relative;
     }
@@ -75,7 +72,8 @@
     /* Bloque Y: Tapa las letras A y B de la izquierda */
     .container21 {
       width: 200px;         /* Ancho exacto del primer iframe */
-      height: 24px;         /* Altura justa para cubrir A y B */
+      bottom: 10px;
+      height: 30px;         /* Altura justa para cubrir A y B */
       background: #3b6657;  /* Color de fondo para disimular */
       border: 1px solid blue; /* Línea azul de referencia (puedes cambiar a 0px cuando esté listo) */
       box-sizing: border-box;
@@ -84,7 +82,8 @@
     /* Bloque Z: Espacio auxiliar de la derecha (debajo del scroll) */
     .container22 {
       flex: 1;              /* Ocupa el ancho restante debajo del segundo iframe */
-      height: 24px;
+      bottom: 10px;
+      height: 30px;
       background: #3b6657;  /* Color de fondo */
       border: 1px solid yellow; /* Línea amarilla de referencia */
       box-sizing: border-box;
@@ -94,7 +93,7 @@
 </head>
 
 <body>
-  <h1>Eibar K.D. - 2026/27 Denboraldiko Partiduak 555</h1> 
+  <h1>Eibar K.D. - 2026/27 Denboraldiko Partiduak 6</h1> 
   
   <div style="height:10px;">&nbsp;</div>
    
@@ -115,7 +114,7 @@
   </div>
 
   <!-- Fila inferior que agrupa los dos bloques Y y Z debajo de sus respectivos iframes -->
-  <div class="container-footer-blocks">
+  <div class="container2">
     <div class="container21"></div>
     <div class="container22"></div>
   </div>
