@@ -42,7 +42,8 @@
       margin-left: 60px;
       margin-right: 60px;
       border: 2px solid black;
-      overflow-y: hidden;
+      overflow: hidden;
+      position: relative; /* Establece la referencia para posicionar container2 */
     }
     
     .container11 {
@@ -66,44 +67,43 @@
     }
     
     .container2 {
-      width: 200px;
-      height: 50px; /* Ajusta la altura del espacio inferior */
-      margin-top: -50px;
-      margin-left: 60px; /* Alineado al margen izquierdo de la tabla */
-      background: #3b6657; /* Cambiado a verde para que coincida con el fondo */
-      z-index: 100;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 200px;         /* Ancho del primer iframe */
+      height: 30px;         /* Altura exacta para cubrir la barra con A y B */
+      background: #3b6657; /* Mismo color verde de fondo */
+      z-index: 9999;       /* Obliga a posicionarse por encima de los iframes */
       border: 1px solid blue;
-      position:relative;
-   }   
+      box-sizing: border-box;
+   }    
 
-    
   </style>
 </head>
 
 <body>
-  <h1>Eibar K.D. - 2026/27 Denboraldiko Partiduak 2</h1> 
+  <h1>Eibar K.D. - 2026/27 Denboraldiko Partiduak 3</h1> 
   
   <div style="height:10px;">&nbsp;</div>
    
   <div class="container0"> </div>
+  
   <div class="container1">
     <iframe 
       class="container11"
       scrolling="no"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAE6H3d3LbUIXEfZ8_cdnKQ6AU6jE8nDmtdPJwgrVNAYXnjWTSOwUxO40BNlg9nbm_7VdSrkBRqj1i/pubhtml?gid=1506814058&widget=true">
-    
     </iframe>
+    
     <iframe 
       class="container12"
       scrolling="no"
       src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAE6H3d3LbUIXEfZ8_cdnKQ6AU6jE8nDmtdPJwgrVNAYXnjWTSOwUxO40BNlg9nbm_7VdSrkBRqj1i/pubhtml?gid=91329535&widget=true">
     </iframe>
+
+    <!-- El bloque container2 se coloca AQUÍ dentro para solaparse correctamente -->
+    <div class="container2"></div>
   </div>
-
-  <!--      Activamos y configuramos el container2 en verde para tapar el hueco inferior izquierdo -->
-  <div class="container2"></div>
-  
-
 
 </body>
 </html>
