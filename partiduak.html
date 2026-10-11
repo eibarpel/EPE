@@ -117,11 +117,14 @@
   <script>
     function moverScroll(direccion) {
       const iframe = document.getElementById('tablaCalendario');
+      alert('11');
       try {
         // Intentamos acceder al documento interno del iframe
         const docIframe = iframe.contentDocument || iframe.contentWindow.document;
+        alert('22');
         // Buscamos el contenedor principal de la tabla de Google Sheets
         const contenido = docIframe.querySelector('.grid-container') || docIframe.body;
+        alert('33');
         
         if (direccion === 'izquierda') {
           contenido.scrollLeft = 0;
